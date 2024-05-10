@@ -21,4 +21,10 @@ test-mac:
 		./simulator < io/inputs/input$$i.txt > output-mac/output$$i.txt; \
 	done
 
+SHELL := /bin/bash
+
+test-ubuntu:
+	for i in {0..10}; do \
+		./simulator < io/inputs/input$$i.txt > output-ubuntu/output$$i.txt; \
+	done
 
